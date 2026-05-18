@@ -3,9 +3,10 @@
 <html>
   <head>   
   <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Bloomy Things </title>
  <style>
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Handlee&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
    background-image:
       linear-gradient(
@@ -150,7 +151,8 @@ body {
      padding: 5px;
   }
   .img1 img {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   display: block;
   margin: 0 auto;
   margin-top: 20px;
@@ -172,7 +174,8 @@ body {
      padding: 5px;
   }
   .img2 img {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   display: block;
   margin: 0 auto;
   margin-top: 20px;
@@ -194,7 +197,8 @@ body {
      padding: 5px;
   }
   .img3 img {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   display: block;
   margin: 0 auto;
   margin-top: 20px;
@@ -217,7 +221,8 @@ body {
      padding: 5px;
   }
   .img4 img {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   display: block;
   margin: 0 auto;
   margin-top: 20px;
@@ -251,7 +256,8 @@ body {
      cursor: pointer;
 }
 .Warning{
-    width: 1180px;
+    width: 100%;
+    max-width: 1180px;
     font-family: "Iosevka Charon", monospace;  
     color: #c42359;
     padding: 10px 22px;
@@ -278,7 +284,37 @@ body {
    font-size: 20px;
    color: #c42359;
 
-   opacity: 0.8;
+   opacity: 0.8; 
+}
+
+   @media (max-width: 768px){
+
+    .container{
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px;
+    }
+
+    .teks{
+        width: 100%;
+    }
+
+    .produk{
+        font-size: 55px;
+    }
+
+    .deskripsi{
+        font-size: 18px;
+    }
+
+    .image img{
+        width: 250px;
+
+        margin-top: 30px;
+    }
+
 }
  </style>
   </head>
